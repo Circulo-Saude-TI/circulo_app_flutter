@@ -1,0 +1,24 @@
+name: circulo_saude_app
+description: App estilo Mobile Saúde (navegável, sem backend) com tema Círculo Saúde.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Você pode adicionar pacotes depois (ex: qr_flutter, http, shared_preferences)
+  # Mantemos zero dependências extras por enquanto.
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/logo.png

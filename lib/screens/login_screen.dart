@@ -66,7 +66,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 child: FilledButton(
                   onPressed: () {
                     if (_formKey.currentState?.validate() ?? false) {
-                      Navigator.pushReplacementNamed(context, AppRoutes.home);
+                      Navigator.pushReplacementNamed(context, AppRoutes.main);
                     }
                   },
                   child: const Text('Acessar'),

@@ -8,10 +8,12 @@ import '../screens/home_screen.dart';
 import '../screens/login_screen.dart';
 import '../screens/perfil_screen.dart';
 import '../screens/splash_screen.dart';
+import '../widgets/bottom_nav.dart'; // novo import
 
 class AppRoutes {
   static const splash = '/';
   static const login = '/login';
+  static const main = '/main'; // nova rota principal
   static const home = '/home';
   static const carteirinha = '/carteirinha';
   static const guia = '/guia';
@@ -22,6 +24,7 @@ class AppRoutes {
   static Map<String, WidgetBuilder> get routes => {
         splash: (_) => const SplashScreen(),
         login: (_) => const LoginScreen(),
+        main: (_) => const BottomNav(), // adiciona o container principal
         home: (_) => const HomeScreen(),
         carteirinha: (_) => const CarteirinhaScreen(),
         guia: (_) => const GuiaMedicoScreen(),

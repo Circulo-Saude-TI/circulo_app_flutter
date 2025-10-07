@@ -63,7 +63,10 @@ class AutorizacoesTab extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 6),
-                Row(
+                Wrap(
+                  spacing: 6,
+                  runSpacing: 4,
+                  alignment: WrapAlignment.start,
                   children: [
                     Text(
                       status,
@@ -72,8 +75,10 @@ class AutorizacoesTab extends StatelessWidget {
                         fontWeight: FontWeight.w600,
                       ),
                     ),
-                    const Spacer(),
-                    Text('Guia: $guia'),
+                    Text(
+                      'Guia: $guia',
+                      style: const TextStyle(fontWeight: FontWeight.w400),
+                    ),
                   ],
                 ),
                 const Divider(),
